@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ul>
+		<%list.forEach(function(item){%>
+		<li>
+			<h3>
+				<a href="/post/detail?id=<%-item.id%>"><%=item.title%></a>
+				id<%=item.content%>
+			</h3>
+		</li>
+		<%})%>
+	</ul>
+</body>
+</html>
