@@ -27,7 +27,7 @@ export default class extends Base {
 	async indexAction(self) {
 
 		let archives = await getArchives(this);
-
+		console.log(archives);
 		this.assign('archives', archives);
 
 		return this.display();

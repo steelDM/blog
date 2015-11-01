@@ -61,6 +61,19 @@ global.formartTime = function (d, pattern) {
 	return pattern;
 };
 
+global.getUTCime = function (d) {
+
+	d = think.isDate(d) ? d : new Date(d);
+
+	var _ary = d.toDateString().split(' ');
+	var MM = _ary[1],
+	    yyyy = _ary[3],
+	    ww = _ary[0],
+	    dd = _ary[2];
+
+	return MM + ' ' + dd + '，' + yyyy;
+};
+
 //key fn or data.key
 //return obj{key:[obj,obj]}
 global.groupData = function (data, key, rule) {
@@ -87,7 +100,7 @@ global.groupData = function (data, key, rule) {
 			}
 		} else {
 			//不存在，以对象形式存在
-			ret[_k] = item;
+			ret[_k] = [item];
 		}
 	});
 

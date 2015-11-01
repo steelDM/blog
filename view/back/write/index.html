@@ -22,27 +22,31 @@ code{  padding: 2px 4px;font-size: 90%;color: #c7254e;background-color: #f9f2f4;
 <body>
   <header>
     <div class="wrap">
-      <h1>A New App Created By ThinkJS</h1>
+      <h1>提交测试</h1>
     </div>
   </header>
   <div class="content">
-    <div class="list">
-      <div class="item">
-        <div class="step">1</div>
-        <h2>Generate Files</h2>
-        <p>Run <code>thinkjs</code> command to create module, controler, model, service and so on. visit <a href="http://www.thinkjs.org/doc/thinkjs_command.html">http://www.thinkjs.org/doc/thinkjs_command.html</a> to view more infomation.</p>
+    <form id="test" method="post" action="/back/write/post">
+      <div>
+        标题：
+        <input type="text" name="title">        
       </div>
-      <div class="item">
-        <div class="step">2</div>
-        <h2>Documatation</h2>
-        <p>ThinkJS has html and pdf documents. visit <a href="http://new.thinkjs.org/doc.html">http://new.thinkjs.org/doc.html</a></p>
-      </div>
-      <div class="item">
-        <div class="step">3</div>
-        <h2>WebSocket</h2>
-        <p>ThinkJS support <code>socket.io</code> and <code>sockjs</code> WebSocket client and server node. visit <a href="http://www.thinkjs.org/doc/adapter_websocket.html">http://www.thinkjs.org/doc/adapter_websocket.html</a></p>
-      </div>
-    </div>
+     <div>
+       评论：
+       <input type="text" name="comment">
+     </div>
+     <div>
+      标签：
+      <input type="text" name="tag">       
+     </div>
+     <div>
+       内容
+       <textarea name="content"></textarea>
+     </div>
+
+      <button type="submit">提交</button>
+    </form>
+  </div>
   </div>
 </body>
 </html>

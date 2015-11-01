@@ -67,11 +67,12 @@ var _default = (function (_Base) {
 				case 2:
 					archives = context$2$0.sent;
 
+					console.log(archives);
 					this.assign('archives', archives);
 
 					return context$2$0.abrupt('return', this.display());
 
-				case 5:
+				case 6:
 				case 'end':
 					return context$2$0.stop();
 			}
