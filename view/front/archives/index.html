@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%- include ../Base/head.html %>
+		<link rel="stylesheet" type="text/css" href="/static/css/archives.css">
+	</head>
+<body>
+	<div class="container">
+		
+		<%- include ../Base/nav.html %>
+		<div class="index mid-col">
+			<div class="mid-col-container">
+				<div id="content" class="inner">
+					<%for (t in archives){%>
+					<section class="archives">
+						<h1 class="year"><%=t%></h1>
+						<%archives[t].forEach(function(item){%>
+						<article>
+							<div class="meta">
+								<span class="date">
+									<time><%=getUTCTime(item.create_time) %></time>
+								</span> 
+								 &nbsp;&nbsp; 
+								<span class="tags">
+									<%item.tag.forEach(function(tag,i){%>
+										<a href="/tag/Attribute.html" class="category" rel="tag">
+											<%=tag%>
+										</a>
+									<%})%>
+								</span>
+							</div>
+								<h1 class="title">
+									<a href="/post/getattribute-and-getattributenode.html">
+										<%=item.title%>
+									</a>
+								</h1>
+						</article>		
+						<%})%>
+					</section>
+					<%}%>
+				</div>
+			</div>
+		</div>
+		<%- include ../Base/nav.html %>		
+	</div>
+</body>
+</html>

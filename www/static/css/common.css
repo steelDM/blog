@@ -1,0 +1,199 @@
+/**reset**/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+fieldset,img {
+	border: 0;
+}
+address,caption,cite,code,dfn,em,th,var,optgroup {
+	font-style: normal;
+	font-weight: normal;
+}
+ins {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+table {
+	font-size: inherit;
+	font: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,th {
+	text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+}
+q:before,q:after {
+	content: '';
+}
+abbr,acronym {
+	border: 0;
+	font-variant: normal;
+}
+legend {
+	color: #000;
+}
+input,button,textarea,select,optgroup,option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+input,button,textarea,select {
+	margin: 0;
+	*font-size: 100%;
+	line-height: 1.2;
+}
+a img,img {
+	-ms-interpolation-mode: bicubic;
+}
+sub,sup {
+	vertical-align: baseline;
+}
+article, aside, dialog, figure, footer, header, 
+hgroup, nav, section, blockquote { 
+        display: block;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* common class */
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+/* for webkit */
+textarea { resize: none }
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus { outline: 0 }
+
+.nojs {
+    background: #FEFFB1;
+    border: 1px solid #ffe574;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 34px;
+}
+/* base style */
+body{
+	font:14px '微软雅黑',"-apple-system","Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align:center;
+	color: #333;
+	background: #FFF;
+}
+
+a{text-decoration:none;color: #4183c4}
+a:hover,
+a:active,
+a:focus{
+	transition: color .3s;
+}
+
+
+.container .left-col {
+    background:#2346A0 url(http://p9.qhimg.com/t01f901f16f206d81f7.jpg) 0 bottom no-repeat;
+    background-size: 300px;
+    height: 100%;
+    position: fixed;
+    width: 270px;
+}
+
+.container .mid-col{
+	background: #fff;
+    left: 0;
+    margin-left: 270px;
+    min-height: 100%;
+    position: absolute;
+    right: 0;	
+}
+
+h1{
+	float: none;
+	font-weight: 300;
+	font-size: 2em;
+}
+/*nav*/
+.container .nav header{
+    margin-top: 75px;
+}
+.container .nav a{
+	color: #EFEFEF;
+    text-shadow: 0 1px #333;	
+}
+.container .nav a:hover{
+	color: #4183c4;
+}
+.container .nav .avatar a{
+	background-image: url(http://p1.qhimg.com/t0173f75d3d8365c363.jpg);
+    background-size: 160px 160px;
+    border-radius: 50%;
+    display: inline-block;
+    height: 160px;
+    margin: 15px 0 20px 0;
+    width: 160px;
+}
+.container .nav .sub li{
+	margin:15px 0 0 -55px;
+}
+.container .mid-col{
+	text-align: left;
+}
+.container .mid-col .mid-col-container {
+    padding: 0 70px 0 40px;
+}
+.container .mid-col .mid-col-container #content, .container .mid-col footer {
+    width: 100%;
+}
+.container .mid-col article h1.title, .container .mid-col article h1.title a {
+    color: #333;
+}
+.container .mid-col article .meta{
+	color: #555;
+    float: right;
+    position: relative;
+    text-align: right;
+    top: 0;
+    width: auto;	
+}
+.post .meta a,
+.archives article .meta a {
+    color: #999;
+}
+article {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #fff;
+    padding: 30px 0;
+}
+article h1.title {
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+article .entry-content {
+    font-size: 16px;
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+article .entry-content p, article .entry-content blockquote, article .entry-content ul, article .entry-content ol, article .entry-content dl, article .entry-content table, article .entry-content iframe, article .entry-content h1, article .entry-content h2, article .entry-content h3, article .entry-content h4, article .entry-content h5, article .entry-content h6, article .entry-content p, article .entry-content pre{margin-top: 15px;}
+.post .meta {
+    color: #999;
+    font-size: .9em;
+    line-height: 2;
+    position: absolute;
+    top: 85px;
+    width: 170px;
+}
+
+
+
+
+
+
